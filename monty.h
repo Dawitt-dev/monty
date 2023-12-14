@@ -6,6 +6,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <ctype.h>
+char **word_list(char *line);
+size_t tokenizer(char *line, char *delim);
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
