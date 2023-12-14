@@ -8,6 +8,8 @@
 #include <ctype.h>
 char **word_list(char *line);
 size_t tokenizer(char *line, char *delim);
+stack_t *push(int n);
+void pall(void);
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -23,6 +25,7 @@ typedef struct stack_s
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
+extern stack_t *stack;
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
